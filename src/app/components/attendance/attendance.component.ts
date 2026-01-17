@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-attendance',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './attendance.component.html'
+})
+export class AttendanceComponent {
+  records = [
+    { name: 'chanchal', status: 'Present' },
+    { name: 'sanjay', status: 'Absent' }
+  ];
+}
