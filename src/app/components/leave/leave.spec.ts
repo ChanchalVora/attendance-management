@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Leave } from './leave';
+import { LeaveComponent } from './leave.component';
 
 describe('Leave', () => {
-  let component: Leave;
-  let fixture: ComponentFixture<Leave>;
+  let component: LeaveComponent;
+  let fixture: ComponentFixture<LeaveComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Leave]
+      imports: [LeaveComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Leave);
+    fixture = TestBed.createComponent(LeaveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
