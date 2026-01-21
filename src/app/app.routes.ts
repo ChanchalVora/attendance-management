@@ -6,11 +6,10 @@ import { LeaveRequestComponent } from './components/leave-request/leave-request.
 import { LeaveApprovalComponent } from './components/leave-approval/leave-approval.component';
 
 export const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'employees', component: EmployeeListComponent },
   { path: 'attendance', component: AttendanceTrackerComponent },
   { path: 'leave-request', component: LeaveRequestComponent },
   { path: 'leave-approval', component: LeaveApprovalComponent }
 ];
-
