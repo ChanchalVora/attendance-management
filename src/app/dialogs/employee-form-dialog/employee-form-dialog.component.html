@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>{{ isEdit ? 'Edit Employee' : 'Add New Employee' }}</h2>
+
+<mat-dialog-content>
+  <div class="placeholder-note">
+    Form submission is disabled for this assignment. The fields below are read-only placeholders.
+  </div>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput disabled [placeholder]="data.employee?.name || 'Employee name'" />
+  </mat-form-field>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Department</mat-label>
+    <mat-select disabled [placeholder]="data.employee?.department || 'Select department'">
+      <mat-option *ngFor="let dept of departments" [value]="dept">{{ dept }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Role</mat-label>
+    <mat-select disabled [placeholder]="data.employee?.role || 'Select role'">
+      <mat-option *ngFor="let role of roles" [value]="role">{{ role }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Close</button>
+  <button mat-raised-button color="primary" disabled>
+    {{ isEdit ? 'Update' : 'Add' }} (Disabled)
+  </button>
+</mat-dialog-actions>
