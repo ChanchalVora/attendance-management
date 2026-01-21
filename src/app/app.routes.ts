@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 import { AttendanceTrackerComponent } from './components/attendance-tracker/attendance-tracker.component';
@@ -13,3 +14,4 @@ export const routes: Routes = [
   { path: 'leave-request', component: LeaveRequestComponent },
   { path: 'leave-approval', component: LeaveApprovalComponent }
 ];
+

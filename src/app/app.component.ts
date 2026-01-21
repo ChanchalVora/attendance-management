@@ -13,7 +13,6 @@ import { MatListModule } from '@angular/material/list';
   imports: [
     CommonModule,
     RouterOutlet,
-    RouterLink,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,

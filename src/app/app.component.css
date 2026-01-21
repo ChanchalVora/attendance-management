@@ -15,7 +15,7 @@
 }
 
 .sidenav-container {
-  position: fixed;
+  position: fixzed;
   top: 64px;
   bottom: 0;
   left: 0;
@@ -36,13 +36,12 @@ mat-nav-list {
 .nav-button {
   width: 100%;
   text-align: left;
-  padding: 16px;
-  min-height: 48px;
+  padding: 12px 16px;
+  min-height: 56px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   border-radius: 0;
-  justify-content: flex-start;
 }
 
 .nav-button mat-icon {
@@ -50,15 +49,6 @@ mat-nav-list {
   width: 24px;
   height: 24px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-button span {
-  line-height: 24px;
-  display: flex;
-  align-items: center;
 }
 
 .nav-button:hover {
@@ -72,7 +62,6 @@ mat-nav-list {
 mat-list-item {
   height: auto !important;
   padding: 0 !important;
-  display: block !important;
 }
 
 .content {
